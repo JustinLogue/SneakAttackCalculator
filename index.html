@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Sneak Attack Calculator</title>
+</head>
+<body>
+    <div class=wrapper>
+        <h1>Sneak Attack Damage Calculator</h1>
+        <h2>Stats</h2>
+            <form class="rogueLvl">
+                <label for="rogueLvl"> Number of Rogue Levels:</label>
+                <input type="text" id="rogueLvl">
+                <input type="submit" value="set">
+            </form>
+            
+            <form class="dex">
+                <label for="dex"> Dexterity:</label>
+                <input type="text" id="dex">
+                <input type="submit" value="set">
+            </form>
+
+            <form class="str">
+                <label for="str"> Strength:</label>
+                <input type="text" id="str">
+                <input type="submit" value="set">
+            </form>
+
+            
+            <h3>Stats</h3>
+            <p id ="roguelv"></p>
+            <p id ="idstr"></p>
+            <p id ="iddex"></p>
+            
+            <h3>Weapon</h3>
+            <p id = "wname"></p>
+            <p id = "wdie"></p>
+            <p id ="damt"></p>
+
+            <!-- <h4>magic bonus</h4>
+            <p>+</p>
+            
+            <h3>critical</h3>
+            <p>true</p>
+            <p>false</p>
+            <h3></h3> 
+                didn't have time to bulid
+        -->
+
+            <div class="weapons">
+                <div class="weapon club">
+                    <img src="./assets/club.png" alt="club">
+                    <p>Club</p>
+                </div>
+
+                <div class="weapon dagger">
+                    <img src="./assets/dagger.jpg" alt="dagger">
+                    <p>Dagger</p>
+                </div>
+
+                <div class="weapon dart">
+                        <img src="./assets/32.png" alt="dart">
+                        <p>Dart</p>
+                    </div>
+
+                <div class="weapon lightHammer">
+                    <img src="./assets/lHammer.png" alt="Light Hammer">
+                    <p>Light Hammer</p>
+                </div>
+
+                <div class="weapon sickle">
+                    <img src="./assets/sickle.png" alt="sickle">
+                    <p>Sickle</p>
+                </div>
+
+                <div class="weapon sling">
+                    <img src="./assets/1.png" alt="sling">
+                    <p>Sling</p>
+                </div>
+
+                <div class="weapon whip">
+                    <img src="./assets/2.png" alt="whip">
+                    <p>Whip</p>
+                </div>
+
+                <div class="weapon handAxe">
+                    <img src="./assets/3.png" alt="Hand Axe">
+                    <p>Hand Axe</p>
+                </div>
+                
+                <div class="weapon javelin">
+                    <img src="./assets/4.png" alt="Javelin">
+                    <p>Javelin</p>
+                </div>
+
+                <div class="weapon quarterstaff">
+                    <img src="./assets/5.png" alt="quarterstaff">
+                    <p>Quarterstaff</p>
+                </div>
+
+                <div class="weapon mace">
+                    <img src="./assets/6.png" alt="mace">
+                    <p>Mace</p>
+                </div>
+
+                <div class="weapon Spear">
+                    <img src="./assets/12.png" alt="spear">
+                    <p>Spear</p>
+                </div>
+
+                <div class="weapon shortBow">
+                    <img src="./assets/7.png" alt="Short Bow">
+                    <p>Short Bow</p>
+                </div>
+
+                <div class="weapon scimitar">
+                    <img src="./assets/8.png" alt="Scimitar">
+                    <p>Scimitar</p>
+                </div>
+
+                <div class="weapon shortSword">
+                    <img src="./assets/9.png" alt="Short Sword">
+                    <p>Short Sword</p>
+                </div>
+
+                <div class="weapon trident">
+                    <img src="./assets/10.png" alt="trident">
+                    <p>trident</p>
+                </div>
+
+                <div class="weapon handCrossbow">
+                    <img src="./assets/11.png" alt="Hand Crossbow">
+                    <p>Hand Cross</p>
+                </div>
+                
+                <div class="weapon greatClub">
+                    <img src="./assets/13.png" alt="Great Club">
+                    <p>Great Club</p>
+                </div>
+
+                <div class="weapon quarterstaff2">
+                    <img src="./assets/5.png" alt="quarterstaff">
+                    <p>Quarterstaff (2 Handed)</p>
+                </div>
+
+                <div class="weapon lightCrossbow">
+                    <img src="./assets/14.png" alt="Light Crossbow">
+                    <p>Light Crossbow</p>
+                </div>
+
+                <div class="weapon spear2">
+                    <img src="./assets/12.png" alt="spear">
+                    <p>Spear (2 Handed)</p>
+                </div>
+
+                <div class="weapon battleAxe">
+                    <img src="./assets/15.png" alt="Battle Axe">
+                    <p>Battle Axe</p>
+                </div>
+
+                <div class="weapon flail">
+                    <img src="./assets/16.png" alt="flail">
+                    <p>Flail</p>
+                </div>
+
+                <div class="weapon longsword">
+                    <img src="./assets/17.png" alt="long sword">
+                    <p>Longsword</p>
+                </div>
+
+                <div class="weapon morningstar">
+                    <img src="./assets/18.png" alt="morningstar">
+                    <p>Morningstar</p>
+                </div>
+
+                <div class="weapon raiper">
+                    <img src="./assets/19.png" alt="raiper">
+                    <p>Raiper</p>
+                </div>
+
+                <div class="weapon warPick">
+                    <img src="./assets/20.png" alt="War Pick">
+                    <p>War Pick</p>
+                </div>
+
+                <div class="weapon trident2">
+                    <img src="./assets/10.png" alt=""trident>
+                    <p>Trident (2 Handed)</p>
+                </div>
+
+                <div class="weapon warhammer">
+                    <img src="./assets/22.png" alt="War Hammer">
+                    <p>Warhammer</p>
+                </div>
+
+                <div class="weapon longBow">
+                    <img src="./assets/21.png" alt="Long Bow">
+                    <p>Long Bow</p>
+                </div>
+
+                <div class="weapon battleaxe2">
+                    <img src="./assets/15.png" alt="Battle Axe">
+                    <p>Battle Axe (2 Handed)</p>
+                </div>
+
+                <div class="weapon glaive">
+                    <img src="./assets/23.png" alt="Glaive">
+                    <p>Glaive</p>
+                </div>
+
+                <div class="weapon halberd">
+                    <img src="./assets/25.png" alt="halberd">
+                    <p>Halberd</p>
+                </div>
+
+                <div class="weapon longsword2">
+                    <img src="./assets/17.png" alt="long sword">
+                    <p>Longsword (2 Handed)</p>
+                </div>
+
+                <div class="weapon pike">
+                    <img src="./assets/24.png" alt="pike">
+                    <p>Pike</p>
+                </div>
+                <div class="weapon heavyCrossbow">
+                    <img src="./assets/26.png" alt="Heavy Crossbow">
+                    <p>Heavy Crossbow</p>
+                </div>
+
+                <div class="weapon warhammer2">
+                    <img src="./assets/22.png" alt="Warhammer">
+                    <p>Warhammer (2 Handed)</p>
+                </div>
+
+                <div class="weapon greatAxe">
+                    <img src="./assets/27.png" alt="Great Axe">
+                    <p>Great Axe</p>
+                </div>
+
+                <div class="weapon lance">
+                    <img src="./assets/28.png" alt="Lance">
+                    <p>Lance</p>
+                </div>
+
+                <div class="weapon greatSword">
+                    <img src="./assets/29.png" alt="Great Sword">
+                    <p>Great Sword</p>
+                </div>
+
+                <div class="weapon maul">
+                    <img src="./assets/30.png" alt="maul">
+                    <p>Maul</p>
+                </div>
+                <div class="weapon blowgun">
+                    <img src="./assets/31.png" alt="Blowgun">
+                    <p>Blowgun</p>
+                </div>
+
+                
+
+            </div>  
+            <div class="attack">
+                    <p>ATTACK!</p>
+            </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="infoCalc.js"></script>
+
+</body>
+</html>
